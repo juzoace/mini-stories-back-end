@@ -1,0 +1,34 @@
+{
+  "name": "mini-stories",
+  "version": "1.0.0",
+  "description": "App that let's you create profiles, write public or private stories, comment on them, and share them with others if you want.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Dzenis H.",
+  "license": "MIT",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
+    "body-parser": "^1.18.1",
+    "connect-redis": "^7.1.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^2.3.9",
+    "moment": "^2.18.1",
+    "mongoose": "^5.13.17",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "engines": {
+    "node": "12.x.x",
+    "npm": "6.x.x"
+  }
+}
