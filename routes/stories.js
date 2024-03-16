@@ -52,12 +52,12 @@ router.get("/user/:googleID", ensureAuthenticated, async (req, res) => {
     });
 
     const stories = await Story.find({
-      user: user[0]._id,
-  
-      status: "public",
-    })
+      user: user[0]._id
+      // status: "private",
+    }) 
       .populate("user")
       .lean();
+    console.log(stories);
 
     res.status(200).json({
       data: stories,
